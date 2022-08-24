@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>AccountDao</members>
+        <members>TermDao</members>
+        <name>ApexClass</name>
+    </types>
+    <!-- <types>
+        <members>accountSearch</members>
+        <name>AuraDefinitionBundle</name>
+    </types> !-->
+    <types>
+        <members>accountSearch</members>
+        <members>accountSearchPagination</members>
+        <members>term</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <version>53.0</version>
+</Package>

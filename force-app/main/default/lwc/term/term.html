@@ -1,0 +1,43 @@
+<template>
+    <lightning-card title="Term">
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_1-of-6"></div>
+            <div class="slds-col slds-size_4-of-6">
+                <div class="title">
+                    <h1>{title}</h1>
+                </div>
+                <div class="button">
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_1-of-6"></div>
+                        <div class="slds-col slds-size_4-of-6">
+                            <div class="slds-grid slds-gutters">
+                                <div class="slds-col slds-size_5-of-12">
+                                    <lightning-layout pull-to-boundary="button">
+                                        <lightning-button variant="neutral" label="Prev" title="title" icon-name="utility:chevronleft"
+                                            onclick={prevHandler} disabled={isDisablePrevButton} class="slds-button"> 
+                                        </lightning-button>
+                                    </lightning-layout>
+                                    
+                                </div>
+                                <div class="slds-col slds-size_2-of-12">
+                                    <p class="enforcementDate">{enforcementDate}</p>
+                                </div>
+                                <div class="slds-col slds-size_5-of-12">
+                                    <lightning-button variant="neutral" label="Next" title="title" icon-name="utility:chevronright" 
+                                        icon-position="right" onclick={nextHandler} disabled={isDisableNextButton} class="slds-button">
+                                    </lightning-button>
+                                    
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="slds-col-slds-size_1-of-6"></div>
+                    </div>
+                </div>
+                <div class="context">
+                    <p>{context}</p>
+                </div>
+            </div>
+            <div class="slds-col slds-size_1-of-6"></div>
+        </div>
+    </lightning-card>
+</template>

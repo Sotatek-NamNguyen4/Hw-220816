@@ -1,0 +1,14 @@
+.title{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px;
+}
+.button{
+    margin: 5px; 
+    text-align: center;
+    margin-bottom: 15px;
+}
+p.enforcementDate {
+    display: inline; 
+}
